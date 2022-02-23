@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: #c7ecee;
+  height: 100vh;
+  align-items: center;
+}
+.fromPage {
+  padding: 50px 30px;
+  width: 300px;
+  background-color: #fff;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.199);
+}
+.fromPage input {
+  width: 100%;
+  height: 30px;
+  padding: 20px 15px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+  background-color: #f0f0f0;
+}
+.checBox {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  /* background-color: red; */
+  /* justify-content: space-between; */
+  position: relative;
+}
+.checBox input {
+  width: 8%;
+  height: 30px;
+  padding: 0;
+  margin-bottom: 0px;
+  background-color: #f0f0f0;
+}
+.checBox p {
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 10px;
+}
+.fromPage button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+    background-color: rgb(236, 236, 236);
+    z-index: 1;
+    color: #000000;
+    cursor: pointer; 
+    transition: 1s;
+}
+.fromPage button:hover{
+    background-color: transparent;
+    color: #c7ecee;
+}
+.fromPage button::after{
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 30px;
+    z-index: -1;
+    transition: 1s;
+}
+.fromPage button:hover::after{
+    width: 100%;
+
+}
+
+
+
+
+.listPage{
+    width: 60%;
+    height: 95vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.144);
+}
+.listPage h1{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 3%;
+}
+.listPage table{
+    margin: auto;
+    /* background-color: blue; */
+    width: 90%;
+    margin: auto;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
